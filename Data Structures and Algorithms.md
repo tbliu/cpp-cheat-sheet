@@ -101,6 +101,11 @@ for(std::vector<int>::iterator it = v.begin(); it != v.end(); it++) {
     std::cout << *it << std::endl;
 }
 
+// Iterate without using iterators:
+for (int i = 0; i < v.size(); i++) {
+    std::cout << v[i] << std::endl;
+}
+
 //Remove head, index, tail
 v.erase(v.begin());             //head
 v.erase(v.begin() + index);     //index
